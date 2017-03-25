@@ -1,8 +1,8 @@
 # solution for euler3
 # has a bunch of methods i don't actually use
-# the only ones i actually use are factorsImproved(x) and findPrime(x)
+# the only ones i actually use are factorsImproved(x) and isPrime(x)
 
-def findPrime(x):
+def isPrime(x):
 	n = 2
 	while n<((x/2)+1):
 		if x%n == 0: return False
@@ -13,7 +13,7 @@ def topPrimeByPrimes(number):
 	#primes = [1]
 	n = ((number/2)+1)
 	while n > 1:
-		if findPrime(n)==True:
+		if isPrime(n)==True:
 			if number%n == 0: return n
 		n -= 1
 	return 1
@@ -23,7 +23,7 @@ def topPrimeByPrimes(number):
 #	n = (x/2)+1
 #	while n>1:
 #		if x%n == 0:
-#			if findPrime(n) == True: return n
+#			if isPrime(n) == True: return n
 #		n-=1
 #	return 1
 
@@ -31,7 +31,7 @@ def factorsImproved(x):
 	n = 2
 	while n < ((x/2)+1):
 		if x%n == 0:
-			if findPrime(x/n) == True: return (x/n)
+			if isPrime(x/n) == True: return (x/n)
 		n += 1
 	return 1
 
