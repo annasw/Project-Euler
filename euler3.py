@@ -1,3 +1,7 @@
+# solution for euler3
+# has a bunch of methods i don't actually use
+# the only ones i actually use are factorsImproved(x) and findPrime(x)
+
 def findPrime(x):
 	n = 2
 	while n<((x/2)+1):
