@@ -24,9 +24,6 @@ int isAmicable(int n) {
 }
 
 int main() {
-	printf("sum of divisors of 220: %d\n",sumOfDivisors(220));
-	printf("isAmicable 284: %d\n",isAmicable(284));
-	
 	int sum = 0;
 	int i;
 	for (i=2; i<10000; i++) {
