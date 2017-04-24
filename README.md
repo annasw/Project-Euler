@@ -1,5 +1,5 @@
 # Project-Euler
-A bunch of solutions to Project Euler problems. Python.
+A bunch of solutions to Project Euler problems.
 
 I'm going to upload these pretty slowly because of what I'm doing with my GitHubHacks.
 
