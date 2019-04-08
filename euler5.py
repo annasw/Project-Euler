@@ -27,7 +27,7 @@ def isPrime(n):
 	return True
 
 # generate a list of all the primes from 2 to n
-# (or more accurately the largest prime <=n)
+# (or more accurately from 2 to the largest prime <=n)
 def genPrimes(n):
 	primes = []
 	for i in range(2,n+1):
