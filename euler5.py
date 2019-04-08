@@ -47,12 +47,14 @@ def primeFac(n):
 
 s = [i for i in range(1,21)]
 
+# we set up a dict s.t. key = prime factor, val = max times it occurs
 d = {}
 for x in s:
 	p = primeFac(x)
 	for i in set(p):
 		d[i] = max(d.get(i,0),p.count(i))
 
+# and then just multiply them all together (as outlined above, a_0^...)
 prod = 1
 for i in d:
 	prod *= (i ** d[i])
